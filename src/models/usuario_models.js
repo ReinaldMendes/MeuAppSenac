@@ -31,11 +31,7 @@ const userSchema = new Schema(
       enum: ["USER", "ADMINISTRATOR","ALUNO"],
       default: "USER",
     },
-    walletId: {
-      type: [Schema.Types.ObjectId],
-      ref: "Carteira",
-      required: true,
-    },
+  
     isActive: {
       type: Boolean,
       required: false,
