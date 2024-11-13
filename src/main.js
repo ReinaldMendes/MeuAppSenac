@@ -6,7 +6,7 @@ import usuario_router from "./routers/usuario_router.js";
 
 const app = e();
 app.use(e.json());
-app.use("/aluno", usuario_router);
+app.use("/usuario", usuario_router);
 
 
 app.listen(process.env.API_PORT, () => console.log("Server Running"));
